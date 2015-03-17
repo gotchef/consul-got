@@ -59,6 +59,16 @@ However, you will most likely want to add service definitions to: `/etc/consul.d
 The server recipe requires setting the number of servers that will participate in the quorum.
 Like the client, if run in aws opsworks there are no other settings required. 
 
+# Testing
+## OSX
+`boot2docker start`
+`dotchef` setup chef environment with env vars and path
+```
+chef gem install kitchen-docker
+chef gem install berkshelf
+```
+`kitchen verify`
+
 ## License and Authors
 
 Author:: YOUR_NAME (<YOUR_EMAIL>)

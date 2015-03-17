@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
-#chef gem install ...
+# NOTE: chef gem install ...
+
+# boot2docker start
 
 gem 'berkshelf'
-
 gem 'kitchen-docker'
 gem "test-kitchen"
 gem "kitchen-vagrant"

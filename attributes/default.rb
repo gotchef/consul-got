@@ -2,9 +2,9 @@
 # attributes::default.rb
 #
 
-default['consul']['version']        = '0.5.0'
+default['consul']['version']        = '0.4.1'
 
-default['consul']['install_method'] = 'source'
+default['consul']['install_method'] = 'binary'
 default['consul']['source_revision'] = 'master'
 
 default['consul']['install_dir']    = '/usr/local/bin'

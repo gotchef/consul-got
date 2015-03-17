@@ -15,13 +15,13 @@ platforms:
 suites:
   - name: default
     run_list:
-      -recipe[consul-got::default]
+      - recipe[consul-got::default]
     attributes:
   - name: client
     run_list:
-      -recipe[consul-got::client]
+      - recipe[consul-got::client]
     attributes:
   - name: server
     run_list:
-      -recipe[consul-got::server]
+      - recipe[consul-got::server]
     attributes:
