@@ -4,7 +4,7 @@ maintainer_email 'YOUR_EMAIL'
 license          'All rights reserved'
 description      'Installs/Configures consul-got'
 long_description 'Installs/Configures consul-got'
-version          '0.1.1'
+version          '0.1.2'
 
 depends 'consul'
 

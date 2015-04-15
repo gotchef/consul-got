@@ -2,16 +2,27 @@
 driver:
   name: docker
   socket: <%= ENV['DOCKER_HOST'] %>
+  image: phusion/baseimage:0.9.16
   use_sudo: false
   require_chef_omnibus: true
+
+provision_command:
+	- /usr/sbin/enable_insecure_key
+	- rm -f /etc/service/sshd/down
+
+run_command: /sbin/my_init 
 
 provisioner:
   name: chef_zero
 
 platforms:
-  - name: ubuntu-12.04
+  - name: ubuntu
     run_list:
     - recipe[apt]
+
+
+
+# ###############################
 #  - name: centos-6.04
 #    driver_config:
 #      image: centos
